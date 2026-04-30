@@ -41,4 +41,10 @@ public:
                 cout << "\nDuplicate number not allowed" << endl;
                 return;
             }
+            //step 4: newnode.next = START
+            newnode->next = START;
+
+            // setep 5: START.prev= newnode (if START exists)
+            if (START != NULL )
+                START->prev = newnode;
            
