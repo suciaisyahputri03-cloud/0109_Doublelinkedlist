@@ -69,4 +69,15 @@ public:
             cout << "\nDuplicate roll numbers not allowed" << endl;
             return;
         }
+
+        // step 9: insert betwen current and current->next
+        newnode->next = current->next; // step 9a: newnode.next = current.next
+        newnode->prev = current;       // step 9b: newnode.prev = current
+
+        // insert last node
+        if (current->next != NULL)
+            current->next->prev = newnode; // step 9c: current.next.prev = newnode
+
+        current->next = newnode; // step 9d: current.next =newnode
+    }
            
