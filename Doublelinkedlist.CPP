@@ -6,7 +6,7 @@ class node
 {
 public:
     int noMhs;
-    node *nex;
+    node *next;
     node *prev;
 };
 
@@ -79,5 +79,14 @@ public:
             current->next->prev = newnode; // step 9c: current.next.prev = newnode
 
         current->next = newnode; // step 9d: current.next =newnode
+    }
+
+    void hapus()
+    {
+        if (START == NULL)
+        {
+            cout << "nList is empty" << endl;
+            return;
+        }
     }
            
