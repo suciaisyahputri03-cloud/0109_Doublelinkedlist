@@ -88,5 +88,13 @@ public:
             cout << "nList is empty" << endl;
             return;
         }
+
+        cout << "\nEnter the roll number of the student whose record is to be delete: ";
+        int rollNo;
+        cin >> rollNo;
+
+        node *current = START;
+
+        
     }
            
