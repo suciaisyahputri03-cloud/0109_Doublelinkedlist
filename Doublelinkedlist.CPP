@@ -47,4 +47,12 @@ public:
             // setep 5: START.prev= newnode (if START exists)
             if (START != NULL )
                 START->prev = newnode;
+
+            // step 6: newnode.prev = NULL
+            newnode->prev = NULL;
+
+            //step 7: START =newnode
+            START = newnode;
+            return;
+        }
            
