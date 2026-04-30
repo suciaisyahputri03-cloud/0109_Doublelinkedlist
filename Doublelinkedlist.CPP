@@ -95,6 +95,15 @@ public:
 
         node *current = START;
 
-        
+        //step 1: traverse the list list to find the node
+        while (current !=  NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL)
+        {
+            court << "record not found" << endl;
+            return;
+        }
+
     }
            
